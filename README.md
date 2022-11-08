@@ -1,6 +1,7 @@
-# School App
+# School App designed by Phillip Peters
 
 *This project is currently in beta and hosted at: [studytracker.tech](https://studytracker.tech). See the [version 1 roadmap here](https://github.com/faraday-academy/curriculum-app/projects/1).*
+
 
 This app allows users to create their own learning curriculum. They can then keep track of their progress, share it with friends, and make changes as they go along.
 
