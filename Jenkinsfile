@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout Code') {
       steps {
-        git(url: 'https://github.com/ppeterszw/curriculum-app', branch: 'dev')
+        git(url: 'https://github.com/ppeterszw/schoolapp', branch: 'main')
       }
     }
 
@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f curriculum-front/Dockerfile -t ppeterszw/curriculum-front:latest .'
+        sh 'docker build -f curriculum-front/Dockerfile -t ppeterszw/schoolapp-front:latest .'
       }
     }
 
@@ -31,7 +31,7 @@ pipeline {
 
     stage('Push') {
       steps {
-        sh 'docker push ppeterszw/curriculum-front:latest'
+        sh 'docker push ppeterszw/schoolapp-front:latest'
       }
     }
 
